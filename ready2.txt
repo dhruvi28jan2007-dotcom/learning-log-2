@@ -1,0 +1,37 @@
+Extract one frame from a video:
+
+ffmpeg -i video.mp4 -frames:v 1 frame.jpg Create a GIF from a video:
+
+ffmpeg -i video.mp4 output.gif
+
+Create a shorter GIF:
+
+ffmpeg -i video.mp4 -t 3 short.gif Create a QR code:
+
+qrencode -o qr.png https://github.com/your-username
+
+Replace filenames and the GitHub URL with the ones you actually used.
+
+4. Errors and Fixes
+
+Error: Input file not found.
+Fix: Check the filename and current directory.
+
+Error: Invalid filter name.
+Fix: Check the spelling of the filter in the FFmpeg documentation.
+
+5. Five Steps for Learning a New Tool
+
+What is this for?
+
+Find the shape of its commands.
+
+Run the smallest thing that works.
+
+Change exactly one thing at a time.
+
+Break it on purpose and understand the error.
+
+6. What I Want to Try Next
+
+I want to create a GIF that plays forwards and then backwards.
